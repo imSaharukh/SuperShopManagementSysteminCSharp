@@ -53,9 +53,9 @@ namespace SuperShopManagementSystem
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -88,12 +88,14 @@ namespace SuperShopManagementSystem
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "manager",
-            "sales",
-            "admin"});
+            "Manager",
+            "Sales",
+            "Admin"});
             this.comboBox1.Location = new System.Drawing.Point(448, 164);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
@@ -105,9 +107,9 @@ namespace SuperShopManagementSystem
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(275, 294);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 29);
+            this.label4.Size = new System.Drawing.Size(135, 29);
             this.label4.TabIndex = 1;
-            this.label4.Text = "password\r\n";
+            this.label4.Text = "Password\r\n\r\n";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -115,7 +117,7 @@ namespace SuperShopManagementSystem
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(275, 167);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 29);
+            this.label5.Size = new System.Drawing.Size(135, 29);
             this.label5.TabIndex = 1;
             this.label5.Text = "Role";
             this.label5.Click += new System.EventHandler(this.label3_Click);
@@ -125,7 +127,7 @@ namespace SuperShopManagementSystem
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(275, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 29);
+            this.label3.Size = new System.Drawing.Size(135, 29);
             this.label3.TabIndex = 1;
             this.label3.Text = "Username";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -146,11 +148,14 @@ namespace SuperShopManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 543);
+            this.ClientSize = new System.Drawing.Size(908, 542);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

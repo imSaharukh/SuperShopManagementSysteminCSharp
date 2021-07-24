@@ -19,7 +19,7 @@ namespace SuperShopManagementSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -35,6 +35,21 @@ namespace SuperShopManagementSystem
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            /*
+             MessageBox.Show(cmbRole.Text,"Info");
+             MessageBox.Show(txtboxUserName.Text, "Info");
+             MessageBox.Show(txtPass.Text, "Info");
+            */
+            MessageBox.Show("Role: "+cmbRole.Text+"\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
         }
     }
 }

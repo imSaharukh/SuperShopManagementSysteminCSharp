@@ -40,7 +40,7 @@ namespace SuperShopManagementSystem
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlImage = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,6 +80,7 @@ namespace SuperShopManagementSystem
             // 
             this.btnShowInfo.AutoEllipsis = true;
             this.btnShowInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowInfo.ForeColor = System.Drawing.Color.Teal;
             this.btnShowInfo.Location = new System.Drawing.Point(112, 256);
             this.btnShowInfo.Name = "btnShowInfo";
             this.btnShowInfo.Size = new System.Drawing.Size(129, 37);
@@ -142,13 +143,13 @@ namespace SuperShopManagementSystem
             this.label3.Text = "Username";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // panel3
+            // pnlImage
             // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Location = new System.Drawing.Point(2, 59);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(348, 251);
-            this.panel3.TabIndex = 2;
+            this.pnlImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlImage.BackgroundImage")));
+            this.pnlImage.Location = new System.Drawing.Point(2, 59);
+            this.pnlImage.Name = "pnlImage";
+            this.pnlImage.Size = new System.Drawing.Size(348, 251);
+            this.pnlImage.TabIndex = 2;
             // 
             // Form1
             // 
@@ -156,7 +157,7 @@ namespace SuperShopManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(681, 440);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnlImage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.MenuText;
@@ -184,7 +185,7 @@ namespace SuperShopManagementSystem
         private System.Windows.Forms.TextBox txtboxUserName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnShowInfo;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlImage;
     }
 }
 

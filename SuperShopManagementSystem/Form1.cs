@@ -49,7 +49,12 @@ namespace SuperShopManagementSystem
              MessageBox.Show(txtboxUserName.Text, "Info");
              MessageBox.Show(txtPass.Text, "Info");
             */
-            MessageBox.Show("Role: " + cmbRole.Text + "\nUsername: " + txtboxUserName.Text + "\nPassword: " + txtPass.Text, "Info");
+            MessageBox.Show("\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
+        }
+
+        private void cmbRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

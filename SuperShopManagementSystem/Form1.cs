@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace SuperShopManagementSystem
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace SuperShopManagementSystem
 
         private void label3_Click(object sender, EventArgs e)
         {
-           // label3.Text = "Mahabub";
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -44,12 +46,16 @@ namespace SuperShopManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*
-             MessageBox.Show(cmbRole.Text,"Info");
-             MessageBox.Show(txtboxUserName.Text, "Info");
-             MessageBox.Show(txtPass.Text, "Info");
-            */
-            MessageBox.Show("\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
+            //MessageBox.Show("\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
+            SqlConnection connection = new  SqlConnection(@"Server=tcp:supershop.database.windows.net,1433;Database=supershop;User ID=supershop;Password=Saharukh123##;Trusted_Connection=False;Encrypt=True;");
+            connection.Open();
+            SqlCommand sqlCommand = new SqlCommand("select * from UserTable",connection);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            DataSet dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+            MessageBox.Show(dataSet.Tables[0].Rows.Count.ToString());
+
+            
         }
 
         private void cmbRole_SelectedIndexChanged(object sender, EventArgs e)

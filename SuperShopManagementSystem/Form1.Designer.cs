@@ -21,6 +21,7 @@ namespace SuperShopManagementSystem
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -68,7 +69,7 @@ namespace SuperShopManagementSystem
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(-459, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(464, 436);
             this.panel2.TabIndex = 5;
@@ -77,10 +78,10 @@ namespace SuperShopManagementSystem
             // 
             this.btnShowInfo.AutoEllipsis = true;
             this.btnShowInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowInfo.Location = new System.Drawing.Point(113, 255);
-            this.btnShowInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShowInfo.Location = new System.Drawing.Point(150, 315);
+            this.btnShowInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnShowInfo.Name = "btnShowInfo";
-            this.btnShowInfo.Size = new System.Drawing.Size(172, 47);
+            this.btnShowInfo.Size = new System.Drawing.Size(172, 46);
             this.btnShowInfo.TabIndex = 4;
             this.btnShowInfo.Text = "Log In";
             this.btnShowInfo.UseVisualStyleBackColor = true;
@@ -89,7 +90,7 @@ namespace SuperShopManagementSystem
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(213, 181);
+            this.txtPass.Location = new System.Drawing.Point(250, 241);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -101,7 +102,7 @@ namespace SuperShopManagementSystem
             this.txtboxUserName.BackColor = System.Drawing.SystemColors.Window;
             this.txtboxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxUserName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtboxUserName.Location = new System.Drawing.Point(213, 126);
+            this.txtboxUserName.Location = new System.Drawing.Point(250, 189);
             this.txtboxUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxUserName.Name = "txtboxUserName";
             this.txtboxUserName.Size = new System.Drawing.Size(143, 34);
@@ -111,9 +112,9 @@ namespace SuperShopManagementSystem
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 181);
+            this.label4.Location = new System.Drawing.Point(69, 241);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 30);
+            this.label4.Size = new System.Drawing.Size(143, 29);
             this.label4.TabIndex = 1;
             this.label4.Text = "Password\r\n\r\n";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -130,9 +131,9 @@ namespace SuperShopManagementSystem
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 129);
+            this.label3.Location = new System.Drawing.Point(69, 189);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 30);
+            this.label3.Size = new System.Drawing.Size(143, 29);
             this.label3.TabIndex = 1;
             this.label3.Text = "Username";
             this.label3.Click += new System.EventHandler(this.label3_Click);

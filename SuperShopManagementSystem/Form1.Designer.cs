@@ -63,10 +63,10 @@ namespace SuperShopManagementSystem
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(343, 1);
+            this.panel1.Location = new System.Drawing.Point(355, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(338, 442);
+            this.panel1.Size = new System.Drawing.Size(326, 442);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -84,7 +84,7 @@ namespace SuperShopManagementSystem
             this.btnShowInfo.Name = "btnShowInfo";
             this.btnShowInfo.Size = new System.Drawing.Size(129, 37);
             this.btnShowInfo.TabIndex = 4;
-            this.btnShowInfo.Text = "Log In";
+            this.btnShowInfo.Text = "Login";
             this.btnShowInfo.UseVisualStyleBackColor = true;
             this.btnShowInfo.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -147,7 +147,7 @@ namespace SuperShopManagementSystem
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Location = new System.Drawing.Point(2, 59);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(336, 249);
+            this.panel3.Size = new System.Drawing.Size(348, 251);
             this.panel3.TabIndex = 2;
             // 
             // Form1

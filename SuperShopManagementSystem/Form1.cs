@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,12 +49,18 @@ namespace SuperShopManagementSystem
         {
             //MessageBox.Show("\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
             SqlConnection connection = new  SqlConnection(@"Server=tcp:supershop.database.windows.net,1433;Database=supershop;User ID=supershop;Password=Saharukh123##;Trusted_Connection=False;Encrypt=True;");
-            connection.Open();
-            SqlCommand sqlCommand = new SqlCommand("select * from UserTable",connection);
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-            DataSet dataSet = new DataSet();
-            sqlDataAdapter.Fill(dataSet);
-            MessageBox.Show(dataSet.Tables[0].Rows.Count.ToString());
+            //connection.Open();
+            //SqlCommand sqlCommand = new SqlCommand("select * from UserTable",connection);
+            //SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            //DataSet dataSet = new DataSet();
+            //sqlDataAdapter.Fill(dataSet);
+
+            IDbConnection db = new SqlConnection(@"Server=tcp:supershop.database.windows.net,1433;Database=supershop;User ID=supershop;Password=Saharukh123##;Trusted_Connection=False;Encrypt=True;");
+
+
+            var user = db.Query<Models.User>("Select * From UserTable").ToList();
+            db.Close();
+            MessageBox.Show(user[0].role);
 
             
         }

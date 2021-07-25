@@ -30,6 +30,7 @@ namespace SuperShopManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,6 +40,7 @@ namespace SuperShopManagementSystem
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@ namespace SuperShopManagementSystem
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(343, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(338, 442);
             this.panel1.TabIndex = 1;
@@ -90,7 +92,7 @@ namespace SuperShopManagementSystem
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(188, 196);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(108, 28);
@@ -102,7 +104,7 @@ namespace SuperShopManagementSystem
             this.txtboxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxUserName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtboxUserName.Location = new System.Drawing.Point(188, 154);
-            this.txtboxUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxUserName.Name = "txtboxUserName";
             this.txtboxUserName.Size = new System.Drawing.Size(108, 28);
             this.txtboxUserName.TabIndex = 3;
@@ -140,16 +142,25 @@ namespace SuperShopManagementSystem
             this.label3.Text = "Username";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Location = new System.Drawing.Point(2, 59);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(336, 249);
+            this.panel3.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(681, 440);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -173,6 +184,7 @@ namespace SuperShopManagementSystem
         private System.Windows.Forms.TextBox txtboxUserName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnShowInfo;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

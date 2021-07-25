@@ -46,6 +46,12 @@ namespace SuperShopManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtPass.Text.Length < 1 && txtboxUserName.Text.Length < 1)
+            { MessageBox.Show("Please enter your username and password"); return; }
+            if (txtboxUserName.Text.Length < 1)
+            {  MessageBox.Show("Please enter your username"); return; }
+            if (txtPass.Text.Length < 1)
+            { MessageBox.Show("Please enter your pasword"); return; }
             //MessageBox.Show("\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
             SqlConnection connection = new  SqlConnection(@"Server=tcp:supershop.database.windows.net,1433;Database=supershop;User ID=supershop;Password=Saharukh123##;Trusted_Connection=False;Encrypt=True;");
             connection.Open();
@@ -56,11 +62,6 @@ namespace SuperShopManagementSystem
             MessageBox.Show(dataSet.Tables[0].Rows.Count.ToString());
 
             
-        }
-
-        private void cmbRole_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

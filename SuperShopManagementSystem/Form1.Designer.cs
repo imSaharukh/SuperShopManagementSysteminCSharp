@@ -31,14 +31,14 @@ namespace SuperShopManagementSystem
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnShowInfo = new System.Windows.Forms.Button();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtboxUserName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnShowInfo = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,32 +63,35 @@ namespace SuperShopManagementSystem
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(343, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(338, 442);
             this.panel1.TabIndex = 1;
             // 
-            // cmbRole
+            // panel2
             // 
-            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Items.AddRange(new object[] {
-            "Manager",
-            "Sales",
-            "Admin"});
-            this.cmbRole.Location = new System.Drawing.Point(160, 44);
-            this.cmbRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(108, 30);
-            this.cmbRole.TabIndex = 2;
+            this.panel2.Location = new System.Drawing.Point(-344, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(348, 354);
+            this.panel2.TabIndex = 5;
+            // 
+            // btnShowInfo
+            // 
+            this.btnShowInfo.AutoEllipsis = true;
+            this.btnShowInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowInfo.Location = new System.Drawing.Point(85, 207);
+            this.btnShowInfo.Name = "btnShowInfo";
+            this.btnShowInfo.Size = new System.Drawing.Size(129, 38);
+            this.btnShowInfo.TabIndex = 4;
+            this.btnShowInfo.Text = "Log In";
+            this.btnShowInfo.UseVisualStyleBackColor = true;
+            this.btnShowInfo.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(160, 147);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(108, 28);
@@ -100,7 +103,7 @@ namespace SuperShopManagementSystem
             this.txtboxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxUserName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtboxUserName.Location = new System.Drawing.Point(160, 102);
-            this.txtboxUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxUserName.Name = "txtboxUserName";
             this.txtboxUserName.Size = new System.Drawing.Size(108, 28);
             this.txtboxUserName.TabIndex = 3;
@@ -117,17 +120,6 @@ namespace SuperShopManagementSystem
             this.label4.Text = "Password\r\n\r\n";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 44);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 24);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Role";
-            this.label5.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,24 +131,32 @@ namespace SuperShopManagementSystem
             this.label3.Text = "Username";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // btnShowInfo
+            // cmbRole
             // 
-            this.btnShowInfo.AutoEllipsis = true;
-            this.btnShowInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowInfo.Location = new System.Drawing.Point(85, 207);
-            this.btnShowInfo.Name = "btnShowInfo";
-            this.btnShowInfo.Size = new System.Drawing.Size(129, 38);
-            this.btnShowInfo.TabIndex = 4;
-            this.btnShowInfo.Text = "Log In";
-            this.btnShowInfo.UseVisualStyleBackColor = true;
-            this.btnShowInfo.Click += new System.EventHandler(this.button1_Click);
+            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Items.AddRange(new object[] {
+            "Manager",
+            "Sales",
+            "Admin"});
+            this.cmbRole.Location = new System.Drawing.Point(160, 44);
+            this.cmbRole.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(108, 30);
+            this.cmbRole.TabIndex = 2;
             // 
-            // panel2
+            // label5
             // 
-            this.panel2.Location = new System.Drawing.Point(-344, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(348, 354);
-            this.panel2.TabIndex = 5;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 44);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 24);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Role";
+            this.label5.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
@@ -167,7 +167,7 @@ namespace SuperShopManagementSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -187,11 +187,11 @@ namespace SuperShopManagementSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.ComboBox cmbRole;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtboxUserName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnShowInfo;
+        private System.Windows.Forms.ComboBox cmbRole;
+        private System.Windows.Forms.Label label5;
     }
 }
 

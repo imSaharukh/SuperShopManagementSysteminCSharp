@@ -53,14 +53,14 @@ namespace SuperShopManagementSystem
             if (txtPass.Text.Length < 1)
             { MessageBox.Show("Please enter your pasword"); return; }
             //MessageBox.Show("\nUsername: "+txtboxUserName.Text+"\nPassword: "+txtPass.Text, "Info");
-            SqlConnection connection = new  SqlConnection(@"Server=tcp:supershop.database.windows.net,1433;Database=supershop;User ID=supershop;Password=Saharukh123##;Trusted_Connection=False;Encrypt=True;");
+            /*SqlConnection connection = new  SqlConnection(@"Server=tcp:supershop.database.windows.net,1433;Database=supershop;User ID=supershop;Password=Saharukh123##;Trusted_Connection=False;Encrypt=True;");
             connection.Open();
             SqlCommand sqlCommand = new SqlCommand("select * from UserTable",connection);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
             DataSet dataSet = new DataSet();
             sqlDataAdapter.Fill(dataSet);
             MessageBox.Show(dataSet.Tables[0].Rows.Count.ToString());
-
+*/
             
         }
     }

@@ -93,11 +93,11 @@ namespace SuperShopManagementSystem
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(198, 241);
+            this.txtPass.Location = new System.Drawing.Point(251, 241);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(215, 34);
+            this.txtPass.Size = new System.Drawing.Size(143, 34);
             this.txtPass.TabIndex = 3;
             // 
             // txtboxUserName
@@ -105,17 +105,17 @@ namespace SuperShopManagementSystem
             this.txtboxUserName.BackColor = System.Drawing.SystemColors.Window;
             this.txtboxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxUserName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtboxUserName.Location = new System.Drawing.Point(198, 190);
+            this.txtboxUserName.Location = new System.Drawing.Point(251, 190);
             this.txtboxUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxUserName.Name = "txtboxUserName";
-            this.txtboxUserName.Size = new System.Drawing.Size(215, 34);
+            this.txtboxUserName.Size = new System.Drawing.Size(143, 34);
             this.txtboxUserName.TabIndex = 3;
             this.txtboxUserName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 241);
+            this.label4.Location = new System.Drawing.Point(69, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 30);
             this.label4.TabIndex = 1;
@@ -134,7 +134,7 @@ namespace SuperShopManagementSystem
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 190);
+            this.label3.Location = new System.Drawing.Point(69, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 30);
             this.label3.TabIndex = 1;
@@ -144,10 +144,10 @@ namespace SuperShopManagementSystem
             // pnlImage
             // 
             this.pnlImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlImage.BackgroundImage")));
-            this.pnlImage.Location = new System.Drawing.Point(13, 106);
+            this.pnlImage.Location = new System.Drawing.Point(3, 73);
             this.pnlImage.Margin = new System.Windows.Forms.Padding(4);
             this.pnlImage.Name = "pnlImage";
-            this.pnlImage.Size = new System.Drawing.Size(451, 303);
+            this.pnlImage.Size = new System.Drawing.Size(464, 309);
             this.pnlImage.TabIndex = 2;
             // 
             // Form1

@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccesss.cs" />
+    <Compile Include="InvoiceSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceSlip.Designer.cs">
+      <DependentUpon>InvoiceSlip.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="SalesForm.Designer.cs">
       <DependentUpon>SalesForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="InvoiceSlip.resx">
+      <DependentUpon>InvoiceSlip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
